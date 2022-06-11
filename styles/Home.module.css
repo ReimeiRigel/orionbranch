@@ -6,6 +6,32 @@
   scroll-snap-type: y mandatory;
 }
 
+.main a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.main a::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  content: '';
+  width: 110%;
+  height: 2px;
+  background: azure;
+  opacity: 80%;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+
+.main a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+
+}
+
 .top {
   scroll-snap-align: start;
   height: 100vh;

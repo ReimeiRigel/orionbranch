@@ -17,21 +17,21 @@ export default function Home() {
           </h1>
         </div>
         <div className={styles.about}>
-          <a href='/'>
+          <a href='/about'>
             <h1 className={styles.title}>
               About
             </h1>
           </a>
         </div>
         <div className={styles.news}>
-          <a href='/'>
+          <a href='/news'>
             <h1 className={styles.title}>
               News
             </h1>
           </a>
         </div>
         <div className={styles.contact}>
-          <a href='/'>
+          <a href="mailto:">
             <h1 className={styles.title}>
               Contact
             </h1>
