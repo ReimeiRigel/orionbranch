@@ -1,5 +1,6 @@
+import { Link } from '@chakra-ui/react'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 export default function Home() {
   return (
@@ -16,26 +17,33 @@ export default function Home() {
             Orion Branch
           </h1>
         </div>
-        <div className={styles.about}>
-          <a href='/about'>
-            <h1 className={styles.title}>
-              About
-            </h1>
-          </a>
-        </div>
         <div className={styles.news}>
-          <a href='/news'>
-            <h1 className={styles.title}>
-              News
-            </h1>
-          </a>
+          <Link href='/news'>
+            <a>
+              <h1 className={styles.title}>
+                News
+              </h1>
+            </a>
+          </Link>
         </div>
+        <div className={styles.about}>
+          <Link href="/about">
+            <a>
+              <h1 className={styles.title}>
+                About
+              </h1>
+            </a>
+          </Link>
+        </div>
+        
         <div className={styles.contact}>
-          <a href="mailto:">
-            <h1 className={styles.title}>
-              Contact
-            </h1>
-          </a>
+          <Link href='/contact'>
+            <a>
+              <h1 className={styles.title}>
+                Contact
+              </h1>
+            </a>
+          </Link>
         </div>
       </main>
 
