@@ -3,9 +3,7 @@ import { Box, Button, ButtonGroup, ChakraProvider } from '@chakra-ui/react'
 export default function Home() {
     return (
       <ChakraProvider>
-        <Box>
-          <Button colorScheme='pink'>Button</Button>
-        </Box>
+        
       </ChakraProvider>
        
     )
